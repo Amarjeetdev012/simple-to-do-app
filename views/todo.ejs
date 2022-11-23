@@ -12,18 +12,16 @@
 </head>
 
 <body>
-  
-  <div><h1>My Todo List</h1></div>  
-  
     <div id="todo-table">
+        <h1> My todo App </h1>
         <form>
             <input type="text" name="item" placeholder="Add new item ..." required>
             <button type="submit">Add Item</button>
         </form>
         <ul>
-            <li>item1</li>
-            <li>item2</li>
-            <li>item3</li>
+         <% for (let i=0;i<todos.length;i++){ %>
+<li> <%= todos[i].item %></li>
+      <%   }  %>
         </ul>
     </div>
 </body>

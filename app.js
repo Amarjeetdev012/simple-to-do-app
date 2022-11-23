@@ -2,6 +2,7 @@ var express = require('express');
 var todoController = require('./controllers/todoController');
 var app = express();
 
+app.use(express.urlencoded({extended:false}))
 //set up template engine
 app.set('view engine','ejs');
 

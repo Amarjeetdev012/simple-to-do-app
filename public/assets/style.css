@@ -58,7 +58,16 @@ li{
     letter-spacing: 1px;
 }
 
+h1 {
+  background-image: url("/public/assets/10801bc0dc7ca0f369d6c00485259b1e.jpg");
+}
+
+h1:hover {
+    color: lightskyblue;
+    
+}
+
 li:hover{
     text-decoration: line-through;
-    background: rgba(0,0,0,0.2);
+    background: rgba(16, 50, 20, 0.596);
 }
