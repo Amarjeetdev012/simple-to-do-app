@@ -1,6 +1,8 @@
 var express = require("express");
 var todoController = require("./controllers/todoController");
 var app = express();
+const cors = require("cors")
+app.use(cors({origin:["http://localhost:3000", "https://to-do-to-do.onrender.com"]}))
 
 app.use(express.urlencoded({ extended: false }));
 //set up template engine
