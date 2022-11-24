@@ -6,6 +6,7 @@ app.use(express.urlencoded({ extended: false }));
 mongoose.connect("mongodb+srv://amarjeet:yjvXjw7UC4A02hvf@cluster0.mkw03uy.mongodb.net/test", {
     useNewUrlParser:true
 })
+console.log("mongodb is connected succesfully")
 
 var todoSchema = new mongoose.Schema({
     item :String
